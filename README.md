@@ -1,5 +1,4 @@
-# CarSecurityPi
-Jeff Kissick--
+Jeff Kissick
 Jarod  Davis
 Conner
 Devin Stubtles

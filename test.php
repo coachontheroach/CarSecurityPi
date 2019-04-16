@@ -45,7 +45,7 @@ else
     else
     {
 
-      $sql = "INSERT INTO Pidata(GPSDATA) VALUES('".$test."')";
+      $sql = "INSERT INTO Pidata(GPSDATA, DATETS) VALUES('".$test."', (NOW() - INTERVAL 4 HOUR + INTERVAL 7 MINUTE - INTERVAL 40 SECOND))";
       if($result = $conn->query($sql))
       {
         echo "Your test data " . $test . " has been created successfully!<br>";
@@ -54,7 +54,19 @@ else
       {
          echo "I have failed at life and as a programmer.<br>";
       }
+
+      // $sql1= "INSERT INTO Pidata(DATETS) VALUES(NOW())";
+      // if($result = $conn->query($sql1))
+      // {
+      //   echo "Time Added!<br>";
+      // }
+      // else
+      // {
+      //    echo "I have failed at life and as a programmer.<br>";
+      // }
      }
+
+
     $result->free();
  }
 

@@ -19,15 +19,15 @@ if($conn->connect_errno) // if conn returns an error code, found on php.net
 
 //echo 'Connected successfully!<br>';
 
-$qry2 = 'SELECT (GPSDATA) FROM Pidata';
+$qry2 = 'SELECT * FROM Pidata';
 
 if($result = $conn->query($qry2))
 {
     echo "<br><br><table class=table>";
-    echo "<tr> <td><b>GPS Data<b></td> </tr>";
+    echo "<tr> <td><b>GPS Data<b></td> <td><b>Time<b></td> </tr>";
     while($row = $result->fetch_assoc())
     {
-      echo "<tr><td>" . $row["GPSDATA"] . "</td></tr>";
+      echo "<tr><td>" . $row["GPSDATA"] . "</td><td>" . $row['DATETS'] . "</td></tr>";
     }
     echo "</table>";
     $result->free();

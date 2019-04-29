@@ -12,16 +12,7 @@
 <div class="container-login100-form-btn m-t-17">
   <button class="login100-form-btn">
     Sign In
-  </button href="data.html">
-</div>
-<div class="w-full text-center p-t-55">
-<span class="txt2">
-Not a member?
-</span>
-
-<a href="#" class="txt2 bo1">
-Sign up now
-</a>
+  </button>
 </div>
 </form>
 </div>

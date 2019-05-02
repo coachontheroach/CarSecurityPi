@@ -1,7 +1,29 @@
+@font-face
+{
+  font-family: Poppins-Regular;
+  src: url('../fonts/poppins/Poppins-Regular.ttf');
+}
+
 #map
 {
   width:50%;
-  height:50px;
-  margin-top: auto;
-  margin-bottom: auto;
+  height:500px;
+  margin: 0 auto 0 auto;
+}
+
+#speed
+{
+  padding-top: 20pt;
+  text-align: center;
+  font-size: 25pt;
+  font-family: Poppins-Regular, sans-serif;
+}
+
+#log
+{
+  margin: 0 auto 0 auto;
+}
+
+body
+{
 }

@@ -17,20 +17,22 @@ if ($conn->connect_errno)
     printf("Connect failed: %s\n", $conn->connect_error);
     exit();
 }
-$query="SELECT latitude, longitude from Pidata  ORDER BY latitude desc";
+$query="SELECT latitude, longitude,speed from Pidata  ORDER BY latitude desc";
 
 if($result = $conn->query($query))
 {
   $lat;
   $long;
+  $speed;
   while($row = $result->fetch_assoc())
   {
-    if($row["latitude"]=='' && $row['longitude']=='')
+    if($row["latitude"]=='' && $row['longitude']=='' && $row['speed']=='')
     {
       break;
     }
     $lat=(float)$row["latitude"];
     $long=(float)$row['longitude'];
+    $speed=(float)$row['speed'];
   }
 }
 $result->free();

@@ -15,10 +15,11 @@
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyNY9wczzLoKAGzvvCsKcEz20gOOKtqlI&callback=initMap"
 async defer></script>
-<div id="Log">
-  <form>
-    <button href="logout.php">LogOut</button>
-  </form>
+<br><br>
+<div class="container-btn">
+  <a href="logout.php" class="btn btn-info btn-lg">
+      <span class="glyphicon glyphicon-log-out"></span> Log out
+  </a>
 </div>
 </body>
 </html>

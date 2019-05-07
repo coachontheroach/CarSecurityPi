@@ -9,6 +9,7 @@
   width:50%;
   height:500px;
   margin: 0 auto 0 auto;
+  padding-bottom: 10pt;
 }
 
 #speed
@@ -17,6 +18,7 @@
   text-align: center;
   font-size: 25pt;
   font-family: Poppins-Regular, sans-serif;
+  float: left;
 }
 
 #log
@@ -24,6 +26,16 @@
   margin: 0 auto 0 auto;
 }
 
-body
+.container-btn
 {
+  margin: 0 auto 0 auto;
+  text-align: center;
+}
+
+.container-btn button
+{
+  font-size: 20px;
+  text-align: center;
+  font-family: Poppins-Regular, sans-serif;
+	position: relative;
 }
